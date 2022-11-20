@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'master', url:'https://github.com/github6472/Prince_.git'
             }
         }
-         stage('UNIT TESTING') {
+        stage('UNIT TESTING') {
             steps {
                 sh 'mvn test'
             }
