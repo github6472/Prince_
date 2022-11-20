@@ -12,9 +12,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Integration Testing')
+        stage('Integration TESTING') {
             steps {
-                sh 'mvn verify -DskipUnitTests'
+                sh 'mvn veriify _dskipUnitTests'
             }
+        }
     }
 }
