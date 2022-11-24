@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script{
                     withSonarQubeEnv(credentialsId: 'sonarqube-token') {
-                     sh 'mvn clean verify sonar:sonar'
+                     sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=jk-webpage'
                     }
                 }
                 
